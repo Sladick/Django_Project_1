@@ -1,0 +1,17 @@
+{% extends 'main/layout.html' %}
+
+{% block title  %}{{ title }}{% endblock title  %}
+
+{% block contentt  %}
+  <div class="features">
+      <h1>Главная страница</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto assumenda cum est id inventore iure placeat repellendus suscipit ullam.</p>
+      <button class="btn btn-warning"> На стрницу про нас </button>
+      {% for el in values%}
+        <p>{{el}}</p>
+      {% endfor %}
+      {% for el in obj%}
+        <p>{{el}}</p>
+      {% endfor %}
+  </div>
+{% endblock contentt %}
